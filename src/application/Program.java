@@ -12,7 +12,7 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
-		List<Seller> sellers = sellerDao.findByDepartment(1);
+		List<Seller> sellers = sellerDao.findAll();
 		
 		for( Seller seller : sellers ) {
 			System.out.println(seller);
